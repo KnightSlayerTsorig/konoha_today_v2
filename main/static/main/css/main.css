@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c2c2c;
+}
+.news_page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 3% 20px 20px 20px;
+}
+
+.news_blocks, .main_news_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 40%;
+    border: 4px outset black;
+}
+
+.news_blocks div, .main_news_block div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.main_news_block {
+    widht: 85%;
+    width: 87%;
+    margin-bottom: 4%;
+}
+.main_news_block div {
+    width: 90%;
+}
+.news_blocks img {
+    width: 400px;
+    height: 250px;
+}
+
+.main_news_block img{
+    width: 1060px;
+    height: 550px;
+}
+
+.article_title {
+    font-size: 25px;
+}
+
+.bottom_article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    font-size: 12px;
+}
+
+.navigation_team div:hover, .navigation_team div a:hover {
+    color: #eb5959;
+    transform: scale(1.10);
+}
+
+.navigation_team {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 220px;
+    width: 100%;
+}
+
+
+.navigation_team div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.navigation_team img {
+    height: 120px;
+    width: 140px;
+}
+
+.navigation_team_5 div {
+    color: red;
+}
+
+.navigation_team_7 div{
+    color: blue;
+}
+
+.navigation_team_10 div{
+    color: yellow;
+}
+
+.navigation_team_15 div{
+    color: white;
+}
+.teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+}
+
+.teams_footer {
+    height: 100px;
+    background: white;
+}
+.iwabe img, .denki img, .metal img, .boruto img, .konohamaru img, .mitsuki img, .shikadai img, .chouchou img, .inojin img,
+.moegi img, .sumire img, .wasabi img, .namida img, .hanabi img {
+    height: 350px;
+    width: 225px;
+}
+
+.sarada img {
+    height: 350px;
+    width: 150px;
+}
+
+.team_7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    font-size: 14px;
+}
+
+.team_7_1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 575px;
+    width: 100%;
+}
+
+.team_7_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 575px;
+    width: 100%;
+}
+
+
+.iwabe, .denki, .metal, .udon, .boruto, .sarada, .mitsuki, .konohamaru,
+.shikadai, .chouchou, .inojin, .moegi, .sumire, .wasabi, .namida, .hanabi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 550px;
+    width: 49%;
+    color: white;
+    background: black;
+}
+.iwabe {
+    border: 5px solid firebrick;
+}
+
+.denki {
+    border: 5px solid cornflowerblue;
+}
+
+.metal {
+    border: 5px solid seagreen;
+}
+
+.udon {
+    background: white;
+}
+
+.boruto {
+    border: 5px solid deeppink;
+}
+.sarada {
+    border: 5px solid red;
+}
+
+.mitsuki {
+    border: 5px solid lightgreen;
+}
+
+.konohamaru {
+    border: 5px solid blue;
+}
+
+.shikadai {
+    border: 5px solid dimgrey;
+}
+
+.chouchou {
+    border: 5px solid lightpink;
+}
+
+.inojin {
+    border: 5px solid rebeccapurple;
+}
+
+.moegi {
+    border: 5px solid darkolivegreen;
+}
+.sumire {
+    border: 5px solid mediumpurple;
+}
+
+.wasabi {
+    border: 5px solid green;
+}
+.namida {
+    border: 5px solid yellow;
+}
+
+.hanabi {
+    border: 5px solid whitesmoke;
+}
+
+.boruto div, .sarada div, .mitsuki div, .konohamaru div, .iwabe div, .metal div, .denki div, .moegi div,
+.shikadai div, .chouchou div, .inojin div, .hanabi div, .wasabi div, .sumire div, .namida div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    height: 175px;
+}
+
+.footer_divider {
+    width: 100%;
+    height: 4px;
+    background: black;
+}
+
+.footer_main div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 33%;
+}
+
+footer h2 {
+    font-size: 25px;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    transition: transform .6s ease;
+}
+
+.icons a {
+    text-decoration: none;
+    color: black;
+}
+
+.icons a:hover {
+    transform: scale(1.25);
+}
+
+.tsorig {
+    font-size: 12px;
+}

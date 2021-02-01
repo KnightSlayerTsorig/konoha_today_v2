@@ -1,0 +1,50 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+
+<img src="{% static 'main/pictures/header.jpg' %}" alt="" width="100%", height="200px">
+
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
+    <h3 class="my-0 mr-md-auto font-weight-normal">Konoha Today</h3>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="{% url 'news' %}">News</a>
+        <a class="p-2 text-dark" href="{% url 'teams' %}">Teams</a>
+        <a class="p-2 text-dark" href="">Gallery</a>
+        <a class="p-2 text-dark" href="{% url 'activities' %}">Activities</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="#">Sign up</a>
+</div>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+<div class="footer_divider"></div>
+<footer>
+    <div>
+        <h2>You can contact with me via this links:</h2>
+    </div>
+    <div class="icons">
+        <a href="https://t.me/KnightSlayerTsorig" target="_blank"><i class="fa fa-telegram fa-2x"></i></a>
+        <a href="https://www.instagram.com/modest.megalomaniac/" target="_blank"><i
+                class="fa fa-instagram fa-2x"></i></a>
+        <a href="https://github.com/KnightSlayerTsorig" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        <a href="" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+    </div>
+    <div class="tsorig">&copy; 2021 Tsorig Inc.</div>
+</footer>
+</body>
+</html>

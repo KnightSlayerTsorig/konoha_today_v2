@@ -1,0 +1,33 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}
+    Konoha Today
+{% endblock %}
+
+{% block content %}
+    <div class="news_page">
+        {% for el in upper_articles %}
+            <div class="news_blocks">
+                <div class="article_title">{{ el.title }}</div>
+                <div class="article_picture"><img src="{{ el.picture_url }}" alt=""></div>
+                <div class="article_text">{{ el.body }}</div>
+                <div class="date">
+                    <div class="article_text">{{ el.date }}</div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="bottom_article">
+        {% for el in bottom_articles %}
+        <div class="main_news_block">
+            <div class="article_title">{{ el.title }}</div>
+            <div class="article_picture"><img src="{{ el.picture_url }}" alt=""></div>
+            <div class="article_text">{{ el.body }}</div>
+            <div class="date">
+                <div class="time">{{ el.date }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
